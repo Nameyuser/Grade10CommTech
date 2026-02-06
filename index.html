@@ -6,5 +6,33 @@
 <body>
     <h1>Hello World</h1>
 <img src="EpicLaptopbutapng.png" alt="a really cool looking laptop with epic images ">
+DOCTYPE html>
+<html>
+<head>
+    <title>Button Counter</title>
+</head>
+<body>
+
+    <h2>Click Counter</h2>
+    <!-- The p element displays the current count -->
+    <p>Clicks: <span id="count" style="font-size:40px;">0</span></p>
+
+    <!-- The button calls the increaseCount() JavaScript function when clicked -->
+    <button onclick="increaseCount()">Click Me</button>
+
+    <script>
+        // Initialize the count variable in JavaScript
+        let count = 0;
+
+        // Function to increase the count and update the HTML display
+        function increaseCount() {
+            count += 1; // Increment the counter
+            // Update the text content of the span element with the ID "count"
+            document.getElementById("count").innerHTML = count;
+        }
+    </script>
+
+</body>
+</html>
 </body>
 </html>
